@@ -1,0 +1,215 @@
+.PostArea {
+  display: flex;
+  width: 100%;
+  justify-content: center; flex-wrap: wrap; align-items: flex-start;
+}
+
+.Post {
+  background: #fff;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  width: 530px;
+  max-width: 100%;
+  display: flex; flex-direction: column;
+  cursor: pointer;
+  box-shadow: 0px 6px 10px 4px rgba(202, 205, 208, 0), 0px 2px 2px 1px rgba(178, 191, 202, 0.34);
+}
+
+.Post p {
+  color: #555;
+line-height: 1.65em;
+font-size: 15px;
+}
+
+.Post h2 {
+    font-weight: 500;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.PostNotRealButton {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #03A9F4;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+    width: 150px;
+    margin-top: 30px;
+    box-shadow: 0px 2px 0px rgb(19, 138, 191);
+}
+
+.PostImage {
+  height: 320px;
+  max-width: 100%;
+  background-image: url(https://semantic-ui.com/images/wireframe/white-image.png) !important;
+  background-size: 300px !important;
+  background-position: 50% 80% !important;
+  background-repeat: no-repeat !important;
+  border-radius: 5px 5px 0 0;
+}
+
+.PostContent {
+  padding: 35px;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.PostAuthor {
+  margin-bottom: 5px;
+  font-size: 11px; color: #5a5a5a;
+  letter-spacing: .4px;
+}
+
+.User {
+  background: #fff;
+  width: 230px;
+  max-width: 100%;
+  padding: 30px 25px;
+  margin-left: 25px;
+  border-radius: 5px;
+  display: flex; flex-direction: column;
+  box-shadow: 0px 6px 10px 4px rgba(202, 205, 208, 0), 0px 2px 2px 1px rgba(178, 191, 202, 0.34);
+}
+
+.UserImg {
+  width: 40px; height: 40px;
+  min-width: 40px;
+  background: #dcdcdc;
+  border-radius: 100%;
+}
+
+.UserCol {
+  width: calc(100% - 40px);
+  max-width: 100%;
+  padding-left: 15px;
+}
+
+.UserName {
+  font-size: 16px;
+}
+
+.UserField {
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+.UserRow {
+  display: flex; flex-wrap: wrap;
+}
+
+.Comments {
+  width: calc(530px + 230px + 25px);
+  max-width: 100%;
+  display: flex; flex-direction: column;
+  box-shadow: 0px 6px 10px 4px rgba(202, 205, 208, 0), 0px 2px 2px 1px rgba(178, 191, 202, 0.34);
+  border-radius: 5px;
+  background: #fff;
+}
+
+.Comment {
+  padding: 30px 35px;
+  border-bottom: 1px solid #ededed;
+}
+
+.CommentImg {
+  width: 40px; height: 40px; min-width: 40px;
+  background: #e5e9ed;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+.CommentTitle {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+
+.Comment p {
+  font-size: 15px;
+  line-height: 1.55em;
+  color: #5a5a5a;
+}
+
+.CommentHead {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #5a5a5a;
+  display: flex;
+  align-items: center
+}
+
+.UserInfo {
+  margin-top: 20px;
+}
+
+.UserInfo .UserField {
+  padding: 7px 0;
+  border-top: 1px solid #ededed;
+  line-height: 1.4em;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+
+.UserInfo .UserField:first-child {
+  border-top: none;
+}
+
+.UserInfo .UserField:last-child {
+  padding-bottom: 0px;
+}
+
+.GoHome {
+  position: fixed;
+    bottom: 20px;
+    height: 40px;
+    background: #03A9F4;
+    box-shadow: 0px 3px 6px rgba(65, 162, 206, 0.42);
+    color: #fff;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 850px) {
+  .Post {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .Post h2 {
+    font-size: 16px;
+    margin-bottom: 7px;
+  }
+
+  .UserField {
+    font-size: 13px;
+  }
+
+  .Post p {
+    font-size: 13px;
+    line-height: 1.5em;
+  }
+
+  .User {
+    margin-left: 0px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .UserInfo {
+    width: 100%;
+  }
+
+  .CommentHead {
+    font-size: 14px;
+  }
+}
